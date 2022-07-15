@@ -8,4 +8,5 @@ Open three terminals
 4. In terminal 3, `sudo iptables -A INPUT -p tcp --dport 1337 -j DROP`
 5. Observe absense of monotonic counter reaching the server
 6. Wait...
-7. Note how the server never terminates the client's connection, even if you C-c in terminal 2.
+7. Note how the server never terminates the client's connection.
+8. In terminal 3, `sudo iptables -D INPUT -p tcp --dport 1337 -j DROP` to remove firewall rule
