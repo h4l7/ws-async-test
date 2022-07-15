@@ -9,4 +9,5 @@ Open three terminals
 5. Observe absense of monotonic counter reaching the server
 6. Wait...
 7. Note how the server never terminates the client's connection.
-8. In terminal 3, `sudo iptables -D INPUT -p tcp --dport 1337 -j DROP` to remove firewall rule
+8. Go ahead and C-c the process in terminal 2 to kill the client.
+9. In terminal 3, `sudo iptables -D INPUT -p tcp --dport 1337 -j DROP` to remove firewall rule
